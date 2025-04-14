@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie clicker</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <h1>Cookie clicker</h1>
+            <ul>
+                <li><button class="shop-button" onClick="shopButtonOpen()">Shop</button></li>
+                <li><button class="sell-button" onClick="sellCookies()">Sell</button></li>
+                <li>Cash: <span class="cash">0</span> €</li>
+            </ul>
+        </nav>
+        <div class="cookie">
+            <h2>Cookies collected: <span class="cookies">0</span></h2>
+            <button class="cookie-button" onClick="cookieClick()"><img src="images/cookie.png"></button>
+            <h1>Click me!</h1>
+        </div>
+        <div class="shop">
+            <button class="close-button" onClick="shopButtonClose()">X</button>
+            <span>Current upgrade: <span class="upgrade">none</span></span>
+            <p class="purchase-error">Cannot buy (missing upgrades/better upgrade or not enough cash)</p>
+            <p class="already-own">You already own this upgrade</p>
+            <h1>Shop</h1>
+            <div class="items">
+                <button class="upgrades" onClick="doubleCookiesPurchase()">2x cookies 50€</button>
+                <button class="upgrades" onClick="quadCookiesPurchase()">4x cookies 100€</button>
+                <button class="upgrades" onClick="eightCookiesPurchase()">8x cookies 500€</button>
+                <button class="upgrades" onClick="twentyCookiesPurchase()">20x cookies 1000€</button>
+                <button class="upgrades" onClick="thousandCookiesPurchase()">1000x cookies 10000€</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="script.js" defer></script>
+</html>
