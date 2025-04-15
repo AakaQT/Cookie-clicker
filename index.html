@@ -22,8 +22,8 @@
         </div>
         <div class="shop">
             <button class="close-button" onClick="shopButtonClose()">X</button>
-            <span>Current upgrade: <span class="upgrade">none</span></span>
-            <p class="purchase-error">Cannot buy (missing upgrades/better upgrade or not enough cash)</p>
+            <span>Current upgrade: <span class="upgrade">none</span> | Cash upgrades: <span class="bonus">none</span></span>
+            <p class="purchase-error">Cannot buy (missing upgrades or not enough cash. Current cash amount: <span class="cash-amount">0</span>)</p>
             <p class="already-own">You already own this upgrade</p>
             <h1>Shop</h1>
             <div class="items">
@@ -31,6 +31,7 @@
                 <button class="upgrades" onClick="quadCookiesPurchase()">4x cookies 100€</button>
                 <button class="upgrades" onClick="eightCookiesPurchase()">8x cookies 500€</button>
                 <button class="upgrades" onClick="twentyCookiesPurchase()">20x cookies 1000€</button>
+                <button class="upgrades" onClick="twoTimes()">2x cash 5000€</button>
                 <button class="upgrades" onClick="thousandCookiesPurchase()">1000x cookies 10000€</button>
             </div>
         </div>
