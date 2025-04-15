@@ -71,13 +71,16 @@ function doubleCookiesPurchase(){
         cashAmount.innerHTML = cashCount;
         upgrades.innerHTML = "2x cookies";
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if(doubleCookies || doubleCookiesBought){
         alreadyOwn.style.display = "block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
@@ -90,13 +93,16 @@ function quadCookiesPurchase(){
         cashAmount.innerHTML = cashCount;
         upgrades.innerHTML = "4x cookies";
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if (fourCookies || fourCookiesBought){
         alreadyOwn.style.display = "block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
@@ -109,13 +115,16 @@ function eightCookiesPurchase(){
         cashAmount.innerHTML = cashCount;
         upgrades.innerHTML = "8x cookies"
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if(eightCookies || eightCookiesBought){
         alreadyOwn.style.display = "block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
@@ -128,13 +137,16 @@ function twentyCookiesPurchase(){
         cashAmount.innerHTML = cashCount;
         upgrades.innerHTML = "20x cookies"
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if (twentyCookies || twentyCookiesBought){
         alreadyOwn.style.display ="block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
@@ -146,13 +158,16 @@ function thousandCookiesPurchase(){
         cashAmount.innerHTML = cashCount;
         upgrades.innerHTML = "1000x cookies";
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if(thousandCookies || thousandCookiesBought){
         alreadyOwn.style.display = "block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
@@ -163,13 +178,16 @@ function twoTimes(){
         cashCount = cashCount - 5000;
         cashAmount.innerHTML = cashCount;
         purchaseError.style.display = "none";
+        alreadyOwn.style.display = "none";
     }
     else if(twoTimesCash){
         alreadyOwn.style.display = "block";
+        purchaseError.style.display = "none";
     }
     else{
         purchaseError.style.display = "block";
         currentCashAmount.innerHTML = cashCount;
+        alreadyOwn.style.display = "none";
     }
 }
 
